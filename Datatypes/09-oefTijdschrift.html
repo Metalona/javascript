@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		let naam = prompt("Wat is de naam van het tijdschrift dat je wil kopen?") ;
+		let prijs = prompt("Hoeveel kost het tijdschrift dat je wil kopen?") ;
+		let stuks = prompt("Hoeveel stuks wil je kopen?") ;
+
+		let totaal = parseFloat(prijs) * parseFloat(stuks) ;
+
+		document.write(`<p>Het tijdschrift is: ${naam}, het type hiervan is ${typeof naam}.</p>`) ;
+		document.write(`<p>De kostprijs van 1 exemplaar is ${prijs}€,  het type hiervan is ${typeof prijs}.</p>`) ;
+		document.write(`<p>Het aantal exemplaren dat je wil kopen is ${stuks}, het type hiervan is ${typeof stuks}.</p>`) ;
+		document.write(`<p>De totale prijs is dan ${totaal.toFixed(2)}€</p>`) ;
+
+	</script>
+</body>
+</html>
